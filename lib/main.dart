@@ -1,5 +1,6 @@
 import 'package:componentes/ui/screens/alerts_screen.dart';
 import 'package:componentes/ui/screens/home_page_temp.dart';
+import 'package:componentes/ui/screens/inputs_screens.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         routes: <String, WidgetBuilder>{
           '/': (BuildContext context) => const HomePageTemp(),
           'alert': (BuildContext context) => const AlertsScreen(),
+          'inputs': (BuildContext context) => const InputsScreens(),
         },
         onGenerateRoute: (RouteSettings settings) {
           print('Rutitabb llamada: ${settings.name}');
