@@ -1,5 +1,5 @@
 import 'package:componentes/providers/menu_provider.dart';
-import 'package:componentes/ui/screens/alerts.dart';
+import 'package:componentes/ui/screens/alerts_screen.dart';
 import 'package:componentes/utils/icons_mapping.dart';
 import 'package:flutter/material.dart';
 

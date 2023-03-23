@@ -1,4 +1,4 @@
-import 'package:componentes/ui/screens/alerts.dart';
+import 'package:componentes/ui/screens/alerts_screen.dart';
 import 'package:componentes/ui/screens/home_page_temp.dart';
 import 'package:flutter/material.dart';
 
