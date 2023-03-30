@@ -35,6 +35,9 @@ class _InputsScreensState extends State<InputsScreens> {
           const Divider(),
           const Divider(),
           _crearEntradaFecha(),
+          const Divider(),
+          const Divider(),
+          _crearDropDown(),
         ],
       ),
     );
@@ -170,5 +173,21 @@ class _InputsScreensState extends State<InputsScreens> {
             _fecha; //Muestra la fechitabb en el textfield
       });
     }
+  }
+
+  Widget _crearDropDown() {
+    return DropdownButton(items: const [], onChanged: (opt) {});
+  }
+
+  List<DropdownMenuItem<String>> getOptionsDropDown() {
+    List<String> _lenguajes = ['Java', 'PHP', 'Javascript', 'Dart'];
+    List<DropdownMenuItem<String>> lista = [];
+    _lenguajes.forEach((lenguaje) {
+      lista.add(DropdownMenuItem(
+        child: Text(lenguaje),
+        value: lenguaje,
+      ));
+    });
+    return lista;
   }
 }
