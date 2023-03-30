@@ -10,7 +10,7 @@ class HomePageTemp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 130, 39, 113),
+        backgroundColor: const Color.fromARGB(255, 231, 86, 204),
         title: const Text('Componentes de Flutter'),
       ),
       body: _lista(),
@@ -51,7 +51,7 @@ List<Widget> _listaItems(List<dynamic> data, BuildContext context) {
       leading: iconMap.getIcon(opt['icon']),
       trailing: const Icon(
         Icons.keyboard_arrow_right,
-        color: Color.fromARGB(255, 16, 15, 16),
+        color: Color.fromARGB(255, 241, 229, 241),
       ),
       subtitle: Text(opt['texto2']),
       onTap: () {

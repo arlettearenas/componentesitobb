@@ -1,6 +1,5 @@
-import 'package:componentes/ui/screens/alerts_screen.dart';
-import 'package:componentes/ui/screens/home_page_temp.dart';
-import 'package:componentes/ui/screens/inputs_screens.dart';
+import 'package:componentes/ui/screens/screens.dart';
+import 'package:componentes/utils/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -13,6 +12,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'App Componentes',
         debugShowCheckedModeBanner: false,
+        // localizationsDelegates: const [
+        //   GlobalMaterialLocalizations.delegate,
+        //   GlobalWidgetsLocalizations.delegate,
+        // ],
+        supportedLocales: [
+          Locale('en', 'US'),
+          //Locale('es', 'ES')
+        ],
         //home: HomePageTemp(),
         initialRoute: '/',
         routes: <String, WidgetBuilder>{
@@ -24,6 +31,7 @@ class MyApp extends StatelessWidget {
           print('Rutitabb llamada: ${settings.name}');
           return MaterialPageRoute(
               builder: (BuildContext context) => const AlertsScreen());
-        });
+        },
+        theme: AppTheme.darkTheme);
   }
 }

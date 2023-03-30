@@ -15,7 +15,7 @@ class IconMapping {
   Icon getIcon(String iconName) {
     return Icon(
       _icons[iconName],
-      color: Color.fromARGB(255, 153, 21, 179),
+      color: Color.fromARGB(255, 168, 107, 212),
     );
   }
 }
